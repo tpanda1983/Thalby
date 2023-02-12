@@ -1,0 +1,568 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+
+header .logo {
+    position: absolute;
+    left: calc(50% - 40px);
+    top: 16px;
+}
+
+header {
+    padding: 7px 0;
+}
+
+.container {
+    margin: auto;
+    max-width: 1064px;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-left: 0;
+    margin-right: 28px;
+}
+
+header nav ul li:last-of-type {
+    margin-right: 0;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #1C1B1B;
+}
+
+header ul li {
+    margin-left: 16px;
+}
+
+header ul li img {
+    display: block;
+}
+
+.main-banner {
+    background: #F0EFEB;
+    position: relative;
+}
+
+.main-banner .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 552px;
+}
+
+.main-banner article {
+    max-width: 534px;
+}
+
+.main-banner h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    color: #000000;
+    margin-bottom: 42px;
+}
+
+.main-banner p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    padding-bottom: 26px;
+}
+
+.main-banner a {
+    display: inline-block;
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 100px;
+    padding: 8px 23px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.main-banner .container-img {
+    position: absolute;
+    /*left: calc(50% + 61px);*/
+    right: 60px;
+    top: 9px;
+    max-width: 599px;
+}
+
+.main-banner .container-img img {
+    width: 100%;
+    display: block;
+}
+
+.bestsellers {
+    padding-top: 60px;
+    padding-bottom: 248px;
+    text-align: center;
+    color: #000000;
+}
+
+.bestsellers .container .info {
+    max-width: 632px;
+    margin: auto;
+}
+
+.bestsellers h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 27px;
+}
+
+.bestsellers p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 47px;
+}
+
+.bestsellers .sellers {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    padding-top: 41px;
+    margin-bottom: 52px;
+}
+
+.bestsellers .flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bestsellers img {
+    width: 100%;
+    display: block;
+}
+
+.bestsellers .flex h3 {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    width: 164px;
+    margin: 20px auto 17px;
+}
+
+.bestsellers .flex p {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+
+.bestsellers .flex a {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+/*.cards {*/
+/*    padding-top: 76px;*/
+/*    padding-bottom: 51px;*/
+/*    background: rgba(204, 204, 204, 0.3);*/
+/*}*/
+
+/*.cards .container {*/
+/*    display: flex;*/
+/*    justify-content: flex-start;*/
+/*    align-items: center;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.cards .container-img {*/
+/*    max-width: 385px;*/
+/*}*/
+
+/*.cards .container-img img {*/
+/*    width: 100%;*/
+/*    display: block;*/
+/*}*/
+
+/*.cards .info {*/
+/*    margin-left: 50px;*/
+/*    max-width: 530px;*/
+/*    color: #000000;*/
+/*}*/
+
+/*.cards .info h2 {*/
+/*    font-weight: 700;*/
+/*    font-size: 36px;*/
+/*    line-height: 42px;*/
+/*    margin-bottom: 31px;*/
+/*}*/
+
+/*.cards .info p {*/
+/*    font-weight: 400;*/
+/*    font-size: 36px;*/
+/*    line-height: 42px;*/
+/*    margin-bottom: 40px;*/
+/*}*/
+
+/*.cards .info a {*/
+/*    font-weight: 700;*/
+/*    font-size: 17px;*/
+/*    line-height: 20px;*/
+/*    color: #000000;*/
+/*}*/
+
+/*.cards.culture {*/
+/*    background: rgba(204, 204, 204, 0.6);*/
+/*}*/
+
+/*.cards.culture .container {*/
+/*    justify-content: flex-end;*/
+/*}*/
+
+/*.cards.culture .container-img {*/
+/*    order: 2;*/
+
+/*}*/
+
+/*.cards.culture .info {*/
+/*    order: 1;*/
+/*    margin-left: 0;*/
+/*    margin-right: 50px;*/
+/*    text-align: right;*/
+/*}*/
+
+/*.cards.power {*/
+/*    background: rgba(204, 204, 204, 0.3);*/
+/*}*/
+
+/*.features {*/
+/*    padding-top: 190px;*/
+/*    padding-bottom: 290px;*/
+/*    text-align: center;*/
+/*    color: #000000;*/
+/*}*/
+
+/*.features h2 {*/
+/*    font-weight: 400;*/
+/*    font-size: 36px;*/
+/*    line-height: 42px;*/
+/*    margin-bottom: 69px;*/
+/*}*/
+
+/*.features .flex {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*.features .flex article {*/
+/*    max-width: 338px;*/
+/*    margin-bottom: 111px;*/
+/*}*/
+
+/*.features .flex article:last-of-type {*/
+/*    margin-bottom: 163px;*/
+/*}*/
+
+/*.features .flex .color {*/
+/*    background: #21F7EC;*/
+/*    border-radius: 35px;*/
+/*    width: 70px;*/
+/*    height: 70px;*/
+/*    margin: 0 auto 26px;*/
+/*}*/
+
+/*.features p {*/
+/*    font-weight: 700;*/
+/*    font-size: 30px;*/
+/*    line-height: 35px;*/
+/*    padding: 0 63px;*/
+/*}*/
+
+/*.features .flex article:nth-of-type(2) .color {*/
+/*    background: #33D3BC;*/
+/*}*/
+
+/*.features .flex article:nth-of-type(3) .color {*/
+/*    background: #18A5C6;*/
+/*}*/
+
+/*.features .flex article:nth-of-type(4) .color {*/
+/*    background: #D38F62;*/
+/*}*/
+
+/*.features .flex article:nth-of-type(5) .color {*/
+/*    background: #F94C43;*/
+/*}*/
+
+/*.features .flex article:nth-of-type(6) .color {*/
+/*    background: #D399FF;*/
+/*}*/
+
+/*.features h3 {*/
+/*    font-weight: 700;*/
+/*    font-size: 36px;*/
+/*    line-height: 42px;*/
+/*    margin: auto;*/
+/*}*/
+
+
+/*.interviews {*/
+/*    padding-top: 198px;*/
+/*    padding-bottom: 52px;*/
+/*    background: #F0F0F0;*/
+/*}*/
+
+/*.interviews .container {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    flex-wrap: wrap;*/
+
+/*}*/
+
+/*.interviews .container article {*/
+/*    max-width: 288px;*/
+/*    position: relative;*/
+/*}*/
+
+/*.interviews article .container-img img {*/
+/*    position: absolute;*/
+/*    top: -386px;*/
+/*}*/
+
+/*.interviews article .container-img img {*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*}*/
+
+/*.interviews h3 {*/
+/*    font-weight: 700;*/
+/*    font-size: 22px;*/
+/*    line-height: 26px;*/
+/*    text-align: center;*/
+/*    letter-spacing: 0.6px;*/
+/*    color: #000000;*/
+/*    margin-bottom: 40px;*/
+/*    padding: 0 10px;*/
+/*}*/
+
+/*.interviews p {*/
+/*    font-weight: 400;*/
+/*    font-size: 20px;*/
+/*    line-height: 23px;*/
+/*    text-align: center;*/
+/*    color: #000000;*/
+/*    margin-bottom: 44px;*/
+
+/*}*/
+
+/*.interviews .container a {*/
+/*    display: block;*/
+/*    font-weight: 700;*/
+/*    font-size: 18px;*/
+/*    line-height: 21px;*/
+/*    text-align: center;*/
+/*    color: #000000;*/
+/*}*/
+
+
+/*.form {*/
+/*    padding-top: 79px;*/
+/*    padding-bottom: 88px;*/
+/*    text-align: center;*/
+/*    color: #000000;*/
+/*}*/
+
+/*.form .container {*/
+/*    max-width: 496px;*/
+/*}*/
+
+/*.form .container h2 {*/
+/*    font-weight: 700;*/
+/*    font-size: 36px;*/
+/*    line-height: 42px;*/
+/*    margin-bottom: 9px;*/
+/*}*/
+
+/*.form .container p {*/
+/*    font-weight: 700;*/
+/*    font-size: 17px;*/
+/*    line-height: 20px;*/
+/*    margin-bottom: 26px;*/
+/*}*/
+
+/*.form .flex {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*.form .flex input {*/
+/*    width: 153px;*/
+/*}*/
+
+/*.form form {*/
+/*    max-width: 366px;*/
+/*    margin: auto;*/
+/*}*/
+
+/*.form form label {*/
+/*    display: none;*/
+/*}*/
+
+/*.form input {*/
+/*    width: 100%;*/
+/*    display: block;*/
+/*    padding: 11px 8px;*/
+/*    border: 1px solid #000000;*/
+/*    font-weight: 400;*/
+/*    font-size: 14px;*/
+/*    line-height: 16px;*/
+/*    margin-bottom: 18px;*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/*::placeholder {*/
+/*    font-weight: 400;*/
+/*    font-size: 14px;*/
+/*    line-height: 16px;*/
+/*    color: #A0A0A0;*/
+
+/*}*/
+
+/*.form button {*/
+/*    background: #000000;*/
+/*    border: 1px solid #000000;*/
+/*    border-radius: 100px;*/
+/*    padding: 7px 23px 10px;*/
+/*    display: block;*/
+/*    margin: auto;*/
+/*    font-weight: 400;*/
+/*    font-size: 14px;*/
+/*    line-height: 16px;*/
+/*    color: #FFFFFF;*/
+
+/*}*/
+
+/*footer {*/
+/*    padding-top: 51px;*/
+/*    padding-bottom: 16px;*/
+/*    background: #020202;*/
+/*}*/
+
+/*footer .container {*/
+/*    max-width: 1094px;*/
+/*    margin: auto;*/
+/*    color: #FFFFFF;*/
+
+/*}*/
+
+/*footer .flex {*/
+/*    display: flex;*/
+/*    justify-content: space-between;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+/*footer .left-logo a img {*/
+/*    margin-bottom: 37px;*/
+/*    display: block;*/
+/*}*/
+
+/*footer .left-logo ul {*/
+/*    display: flex;*/
+/*    justify-content: flex-start;*/
+/*    align-items: center;*/
+/*}*/
+
+/*footer .left-logo li {*/
+/*    margin-right: 21px;*/
+/*}*/
+
+/*footer .left-logo li:last-of-type {*/
+/*    margin-right: 0;*/
+/*}*/
+
+/*footer .left-logo li img {*/
+/*    display: block;*/
+/*}*/
+
+
+/*footer .right-menu {*/
+/*    display: flex;*/
+/*    align-items: flex-start;*/
+/*}*/
+
+/*footer .right-menu ul {*/
+/*    list-style: none;*/
+/*}*/
+
+/*footer .right-menu ul:first-of-type {*/
+/*    margin-right: 72px;*/
+/*}*/
+
+/*footer .right-menu ul:last-of-type {*/
+/*    margin-right: 27px;*/
+/*}*/
+
+/*footer .right-menu li {*/
+/*    margin-bottom: 12px;*/
+/*}*/
+
+/*footer .right-menu li:first-of-type {*/
+/*    margin-bottom: 36px;*/
+/*    font-weight: 400;*/
+/*    font-size: 14px;*/
+/*    line-height: 23px;*/
+/*    text-transform: uppercase;*/
+
+/*}*/
+
+/*footer .right-menu li:last-of-type {*/
+/*    margin-bottom: 20px;*/
+
+
+/*}*/
+
+/*footer .right-menu li a {*/
+/*    text-decoration: none;*/
+/*    margin-bottom: 12px;*/
+/*    font-size: 14px;*/
+/*    line-height: 21px;*/
+/*    color: #FFFFFF;*/
+/*}*/
+
+/*footer p {*/
+/*    font-weight: 400;*/
+/*    font-size: 14px;*/
+/*    line-height: 23px;*/
+/*    text-align: center;*/
+/*}*/
+
+
+
+
+
+
+
+
+
+
+
