@@ -57,14 +57,14 @@ header ul li img {
 
 .main-banner {
     background: #F0EFEB;
-    position: relative;
+    /*position: relative;*/
 }
 
 .main-banner .container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    min-height: 552px;
+    min-height: 554px;
 }
 
 .main-banner article {
@@ -101,11 +101,12 @@ header ul li img {
 }
 
 .main-banner .container-img {
-    position: absolute;
-    /*left: calc(50% + 61px);*/
-    right: 60px;
-    top: 9px;
-    max-width: 599px;
+    /*position: absolute;*/
+    /*right: 60px;*/
+    /*top: 9px;*/
+    position: relative;
+    width: 599px;
+    height: 521px;
 }
 
 .main-banner .container-img img {
