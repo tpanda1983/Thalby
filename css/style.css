@@ -57,8 +57,7 @@ header ul li img {
 
 .main-banner {
     background: #F0EFEB;
-    /*position: relative;*/
-}
+   }
 
 .main-banner .container {
     display: flex;
@@ -101,16 +100,15 @@ header ul li img {
 }
 
 .main-banner .container-img {
-    /*position: absolute;*/
-    /*right: 60px;*/
-    /*top: 9px;*/
     position: relative;
-    width: 599px;
-    height: 521px;
+    top: -7px;
+    right: -120px;
+    max-width: 599px;
+    max-height: 521px;
 }
 
 .main-banner .container-img img {
-    width: 100%;
+    /*width: 100%;*/
     display: block;
 }
 
@@ -124,6 +122,9 @@ header ul li img {
 .bestsellers .container .info {
     max-width: 632px;
     margin: auto;
+}
+.bestsellers article {
+    max-width: 314px;
 }
 
 .bestsellers h2 {
@@ -181,6 +182,36 @@ header ul li img {
     text-align: center;
     color: #000000;
 }
+
+.bestsellers .owl-item {
+    display: flex;
+    justify-content: center;
+}
+
+.bestsellers .owl-dots  {
+    position: absolute;
+    bottom: -30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.bestsellers .owl-dots span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #FFFFFF;
+    border: black solid 2px;
+    border-radius: 50px;
+    margin: 0 20px;
+}
+
+.bestsellers .owl-dots .active span {
+    width: 20px;
+    height: 20px;
+    background: blueviolet;
+}
+
 
 /*.cards {*/
 /*    padding-top: 76px;*/

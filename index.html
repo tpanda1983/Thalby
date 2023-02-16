@@ -9,6 +9,10 @@
 	<link rel='preconnect' href='https://fonts.googleapis.com'>
 	<link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
 	<link href='https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap' rel='stylesheet'>
+	<!--	2 подлючаем owlcarousel-->
+	<link rel='stylesheet' href='css/owl.carousel.css'>
+	<link rel='stylesheet' href='css/owl.theme.default.css'>
+	
 	<link rel='stylesheet' href='css/reset.css'>
 	<link rel='stylesheet' href='css/style.css'>
 </head>
@@ -60,7 +64,7 @@
 					<p>Available as ebooks here and on Amazon.</p>
 				</div>
 				<h2 class='sellers'>Our best sellers</h2>
-				<div class='flex'>
+				<div class='flex owl-carousel'>
 					<article>
 						<img src='img/image1-bestsellers.png' alt='img'>
 						<h3>Thalby Guide to French Culture and Heritage</h3>
@@ -253,5 +257,13 @@
 <!--			</div>-->
 <!--		</footer>-->
 	</main>
+<!--	1 подключаем jquery-->
+	<script
+		src="https://code.jquery.com/jquery-3.6.3.js"
+		integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+		crossorigin="anonymous"></script>
+<!--	3 подключаем js-файл owlcarousel и созданный файл scripts-->
+	<script src="js/owl.carousel.js"></script>
+	<script src="js/scripts.js"></script>
 </body>
 </html>
