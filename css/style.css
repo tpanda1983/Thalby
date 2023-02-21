@@ -1,16 +1,26 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-}
+   }
+
 
 header .logo {
     position: absolute;
     left: calc(50% - 40px);
     top: 16px;
+    z-index: 3;
 }
 
 header {
+    background: #FFFFFF;
     padding: 7px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+
 }
 
 .container {
@@ -28,6 +38,8 @@ header ul {
     list-style: none;
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 3;
 }
 
 header nav ul li {
@@ -55,8 +67,13 @@ header ul li img {
     display: block;
 }
 
+
+
+
+
 .main-banner {
     background: #F0EFEB;
+    margin-top: 56px;
    }
 
 .main-banner .container {
@@ -117,6 +134,8 @@ header ul li img {
     padding-bottom: 248px;
     text-align: center;
     color: #000000;
+    position: relative;
+    /*z-index: 1;*/
 }
 
 .bestsellers .container .info {

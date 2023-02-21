@@ -12,15 +12,39 @@
 	<!--	2 подлючаем owlcarousel-->
 	<link rel='stylesheet' href='css/owl.carousel.css'>
 	<link rel='stylesheet' href='css/owl.theme.default.css'>
-	
+	<link rel='stylesheet' href='css/mobile-menu.css'>
+	<link rel='stylesheet' href='css/media.css'>
 	<link rel='stylesheet' href='css/reset.css'>
 	<link rel='stylesheet' href='css/style.css'>
 </head>
 <body>
+<!--	!!!!!!!!!!!старый хедер до внедрения мобильного меню-->
+<!--	<header>-->
+<!--		<div class='container'>-->
+<!--			<a class='logo' href='#'><img src='img/logo.svg' alt='logo'></a>-->
+<!--			<nav>-->
+<!--				<ul>-->
+<!--					<li><a href='#'>Shop</a></li>-->
+<!--					<li><a href='#'>Collections</a></li>-->
+<!--					<li><a href='#'>Try a Free Guide</a></li>-->
+<!--					<li><a href='#'>Stories</a></li>-->
+<!--				</ul>-->
+<!--			</nav>-->
+<!--			<ul>-->
+<!--				<li><a href='#' title='' target=''><img src='img/insta-heder.svg' alt='instagram'></a></li>-->
+<!--				<li><a href='#'><img src='img/search-heder.svg' alt='search'></a></li>-->
+<!--				<li><a href='#'><img src='img/add-heder.svg' alt='basket'></a></li>-->
+<!--			</ul>-->
+<!--		</div>-->
+<!--	</header>-->
 	<header>
 		<div class='container'>
+			<div id='toggle'>
+				<input type='checkbox'>
+				<span></span>
+			</div>
 			<a class='logo' href='#'><img src='img/logo.svg' alt='logo'></a>
-			<nav>
+			<nav id='menu'>
 				<ul>
 					<li><a href='#'>Shop</a></li>
 					<li><a href='#'>Collections</a></li>
@@ -35,6 +59,7 @@
 			</ul>
 		</div>
 	</header>
+	
 	<main>
 		<section class='main-banner'>
 			<div class='container'>
