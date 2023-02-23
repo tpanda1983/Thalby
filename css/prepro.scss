@@ -1,0 +1,242 @@
+$black-color: black;
+$white-color: white;
+%font-first {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+%font-second {
+  font-size: 17px;
+  line-height: 20px;
+}
+
+@mixin theme($theme: space-between) {
+  display: flex;
+  justify-content: $theme;
+  align-items: center;
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+}
+
+.container {
+  margin: auto;
+  max-width: 1064px;
+}
+
+header {
+  background: $white-color;
+  padding: 7px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  .logo {
+    position: absolute;
+    left: calc(50% - 40px);
+    top: 16px;
+    z-index: 3;
+  }
+
+  .container {
+    @include theme;
+
+    nav {
+      ul {
+        li {
+
+          margin-left: 0;
+          margin-right: 28px;
+
+          &:last-of-type {
+            margin-right: 0;
+          }
+
+          a {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 26px;
+            color: #1C1B1B;
+          }
+        }
+      }
+    }
+
+    ul {
+      list-style: none;
+      @include theme;
+      position: relative;
+      z-index: 3;
+
+
+      li {
+        margin-left: 16px;
+
+        img {
+          display: block;
+        }
+      }
+
+    }
+
+  }
+}
+
+
+.main-banner {
+  background: #F0EFEB;
+  margin-top: 56px;
+
+  .container {
+    @include theme($theme: flex-start);
+    min-height: 554px;
+
+    article {
+      max-width: 534px;
+
+      h1 {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 70px;
+        color: $black-color;
+        margin-bottom: 42px;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: $black-color;
+        padding-bottom: 26px;
+      }
+
+      a {
+        display: inline-block;
+        background: $black-color;
+        border: 1px solid $black-color;
+        border-radius: 100px;
+        padding: 8px 23px;
+        font-weight: 400;
+        @extend %font-second;
+        color: $white-color;
+        text-decoration: none;
+      }
+    }
+
+    .container-img {
+      position: relative;
+      top: -7px;
+      right: -120px;
+      max-width: 599px;
+      max-height: 521px;
+
+      img {
+        display: block;
+      }
+    }
+  }
+}
+
+
+.bestsellers {
+  padding-top: 60px;
+  padding-bottom: 248px;
+  text-align: center;
+  color: $black-color;
+  position: relative;
+
+  .container {
+    h2 {
+      @extend %font-first;
+      margin-bottom: 27px;
+    }
+
+    .info {
+      max-width: 632px;
+      margin: auto;
+
+      p {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        margin-bottom: 47px;
+      }
+    }
+
+    .flex {
+      @include theme;
+      flex-wrap: wrap;
+
+      article {
+        max-width: 314px;
+
+        .owl-dots {
+          position: absolute;
+          bottom: -30px;
+          width: 100%;
+          @include theme($theme: center);
+
+          span {
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background: $white-color;
+            border: $black-color solid 2px;
+            border-radius: 50px;
+            margin: 0 20px;
+          }
+        }
+
+        img {
+          width: 100%;
+          display: block;
+        }
+
+        h3 {
+          font-weight: 700;
+          @extend %font-second;
+          width: 164px;
+          margin: 20px auto 17px;
+        }
+
+        p {
+          font-weight: 400;
+          @extend %font-second;
+          margin-bottom: 10px;
+        }
+
+        a {
+          font-weight: 700;
+          @extend %font-second;
+          text-align: center;
+          color: $black-color;
+        }
+      }
+    }
+
+    .sellers {
+      @extend %font-first;
+      padding-top: 41px;
+      margin-bottom: 52px;
+    }
+
+  }
+}
+
+.bestsellers .owl-item {
+  @include theme($theme: flex-start);
+
+}
+
+.bestsellers .owl-dots .active span {
+  width: 20px;
+  height: 20px;
+  background: blueviolet;
+}

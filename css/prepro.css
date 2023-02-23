@@ -1,0 +1,162 @@
+.bestsellers .container h2, .bestsellers .container .sellers {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px; }
+
+.main-banner .container article a, .bestsellers .container .flex article h3, .bestsellers .container .flex article p, .bestsellers .container .flex article a {
+  font-size: 17px;
+  line-height: 20px; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal; }
+
+.container {
+  margin: auto;
+  max-width: 1064px; }
+
+header {
+  background: white;
+  padding: 7px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; }
+  header .logo {
+    position: absolute;
+    left: calc(50% - 40px);
+    top: 16px;
+    z-index: 3; }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header .container nav ul li {
+      margin-left: 0;
+      margin-right: 28px; }
+      header .container nav ul li:last-of-type {
+        margin-right: 0; }
+      header .container nav ul li a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 26px;
+        color: #1C1B1B; }
+    header .container ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      z-index: 3; }
+      header .container ul li {
+        margin-left: 16px; }
+        header .container ul li img {
+          display: block; }
+
+.main-banner {
+  background: #F0EFEB;
+  margin-top: 56px; }
+  .main-banner .container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 554px; }
+    .main-banner .container article {
+      max-width: 534px; }
+      .main-banner .container article h1 {
+        font-weight: 700;
+        font-size: 60px;
+        line-height: 70px;
+        color: black;
+        margin-bottom: 42px; }
+      .main-banner .container article p {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        color: black;
+        padding-bottom: 26px; }
+      .main-banner .container article a {
+        display: inline-block;
+        background: black;
+        border: 1px solid black;
+        border-radius: 100px;
+        padding: 8px 23px;
+        font-weight: 400;
+        color: white;
+        text-decoration: none; }
+    .main-banner .container .container-img {
+      position: relative;
+      top: -7px;
+      right: -120px;
+      max-width: 599px;
+      max-height: 521px; }
+      .main-banner .container .container-img img {
+        display: block; }
+
+.bestsellers {
+  padding-top: 60px;
+  padding-bottom: 248px;
+  text-align: center;
+  color: black;
+  position: relative; }
+  .bestsellers .container h2 {
+    margin-bottom: 27px; }
+  .bestsellers .container .info {
+    max-width: 632px;
+    margin: auto; }
+    .bestsellers .container .info p {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 23px;
+      margin-bottom: 47px; }
+  .bestsellers .container .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    .bestsellers .container .flex article {
+      max-width: 314px; }
+      .bestsellers .container .flex article .owl-dots {
+        position: absolute;
+        bottom: -30px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .bestsellers .container .flex article .owl-dots span {
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          background: white;
+          border: black solid 2px;
+          border-radius: 50px;
+          margin: 0 20px; }
+      .bestsellers .container .flex article img {
+        width: 100%;
+        display: block; }
+      .bestsellers .container .flex article h3 {
+        font-weight: 700;
+        width: 164px;
+        margin: 20px auto 17px; }
+      .bestsellers .container .flex article p {
+        font-weight: 400;
+        margin-bottom: 10px; }
+      .bestsellers .container .flex article a {
+        font-weight: 700;
+        text-align: center;
+        color: black; }
+  .bestsellers .container .sellers {
+    padding-top: 41px;
+    margin-bottom: 52px; }
+
+.bestsellers .owl-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.bestsellers .owl-dots .active span {
+  width: 20px;
+  height: 20px;
+  background: blueviolet; }
